@@ -1,39 +1,29 @@
 # ffmpeg-brander
-Simple python script that allows you to append intro+outro files and overlay images to an exisiting video file.
+Simple perl script that allows you to append intro+outro files and overlay images to an exisiting video file.
 
 ## Dependencies
-Minimum Python 3.5 is required.
-Also make sure to install the ffmpeg-python lib.
-```python
-pip install ffmpeg-python
-```
+Minimum Perl 5.1 is required.
 
 ## Usage
 
-```python
-python brander.py -i file 
+```perl
+perl brander.pl -input FILE -intro FILE -outro FILE
 ```
-`-i file/filelist`
+`-input FILE`
 >video file or a list of video files, which should be branded.
 
-## Optional Flags
-`-intro file`
+`-intro FILE`
 >the intro video file, which should be prepended.
 
-`-istart t -iend t`
->exact time which should be used from the intro input
-
-`-outro file`
+`-outro FILE`
 >outro video file, which should be appended.
 
-`-ostart t -oend t`
->exact time which should be used from the outro input
-
-`-overlay file`
+## Optional Flags
+`-overlay FILE`
 >png file which should be overlayed.
 
-`-opacity #`
->opacity between 0 (visible) to 100 (transparent) for the png file.
+`-it NUMBER`
+>time in seconds which should be used from the intro input
 
-`-timestamps list`
->timestamps for the overlay, when it should be displayed
+`-ot NUMBER`
+>exact time which should be used from the outro input
