@@ -2,7 +2,7 @@
 Simple perl script that allows you to append intro+outro files and overlay images to an exisiting video file.
 
 ## Dependencies
-Minimum Perl 5.1 is required.
+Minimum Perl 5.1 and ffmpeg are required.
 
 ## Usage
 
